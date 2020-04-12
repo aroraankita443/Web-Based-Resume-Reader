@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method ='post' action="result" enctype="multipart/form-data" onsubmit="Word Reader.py">
+        {% csrf_token %}
+        <hr><hr>
+        <center>
+        <font color='yellow' size="6"><b>
+            <h1>WELCOME TO WEB - BASED RESUME READER </h1>
+        </b></font>
+        </center>
+        <hr><hr><br><br>
+        {{ form }}
+        <button type="submit">Submit</button>
+
+</form>
+{% endblock %}
